@@ -4,7 +4,7 @@ This package provides a super simple interface to send discord messages through 
 
 ### Installation
 ```
-go get github.com/gtuk/discordwebhook
+go get github.com/anxtyanxty/discordwebhook
 ```
 
 ### Example
@@ -22,8 +22,8 @@ func main() {
    var url = "https://discord.com/api/webhooks/..."
 
    message := discordwebhook.Message{
-       Username: &username,
-       Content: &content,
+       Username: username,
+       Content: content,
    }
 
    err := discordwebhook.SendMessage(url, message)
